@@ -10,7 +10,7 @@ class LoginPage(BasePage):
 
     def should_be_login_url(self):
         cur_url = self.browser.current_url
-        assert 'login' in cur_url, 'Fail in url, string login not find'
+        assert 'login' in cur_url, 'Fail in url, string login not find in url'
 
     def should_be_login_form(self):
         a = self.is_element_present(*LoginPageLocators.LOGIN_EMAIL)
