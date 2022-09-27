@@ -13,10 +13,11 @@ class LoginPageLocators():
     REGISTRATION_CONFIRM_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password2")
 
 
-class ProductLocators():
+class ProductPageLocators():
     ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
-    ALERT_SUCCESS_ADD_TO_BASKET = (By.CSS_SELECTOR, "#messages :nth-of-type(1) > .alertinner")
+    MESSAGE_SUCCESS_ADD_TO_BASKET = (By.CSS_SELECTOR, "#messages :nth-of-type(1) > .alertinner")
+    NAME_PRODUCT_IN_MESSAGE = (By.CSS_SELECTOR, "#messages :nth-of-type(1) > .alertinner strong")
     NAME_PRODUCT = (By.CSS_SELECTOR, ".col-sm-6.product_main h1")
     PRICE_PRODUCT = (By.CSS_SELECTOR, ".col-sm-6.product_main .price_color")
-    ALERT_PRICE_PRODUCT_IN_BASKET = (By.CSS_SELECTOR, "#messages :nth-of-type(3) > .alertinner")
+    MESSAGE_PRICE_PRODUCT_IN_BASKET = (By.CSS_SELECTOR, "#messages :nth-of-type(3) > .alertinner")
 
